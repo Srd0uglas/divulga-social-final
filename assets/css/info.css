@@ -1,0 +1,21 @@
+.info__opening__layout { 
+    display: flex;
+    gap: 100px;
+}
+
+.info__ongs { width: 350px; }
+.info__btn__layout {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    gap: 20px 30px;
+}
+.info__about--1 h3 {
+    font-family: var(--fonte_inter);
+    font-size: var(--fonte_subtitulo-medio);
+    color: var(--cor_preto);
+    text-align: end;
+}
+.infographic {
+    font-family: var(--fonte_inter);
+}

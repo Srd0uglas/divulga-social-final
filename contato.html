@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivulgaSocial | Contato</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <header class="menu__layout">
+        <h1 class="menu__title">DivulgaSocial</h1>
+        <nav>
+            <ul class="nav__layout">
+                <li><a class="nav__item menu--color" href="index.html#hero">HOME</a></li>
+                <li><a class="nav__item menu--color" href="index.html#sobre">SOBRE NÓS</a></li>
+                <li><a class="nav__item menu--color" href="info.html">COMO FUNCIONA?</a></li>
+                <li class="nav__dropdown" onclick="showMenu()">
+                    <span class="nav__item menu--color">ONGS PARCEIRAS <img class="nav__dropdown__icon icon--color" src="assets/icons/icon_seta.svg" alt="Seta apontado para baixo indicando o submenu da categoria."></span>
+                    <ul class="dropdown--content" id="dropdownContent">
+                        <li><a class="nav__item nav__subitem menu--color" href="crianca.html">CRIANÇAS</a></li>
+                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">APOIO ÀS MULHERES</a></li>
+                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">IDOSOS</a></li>
+                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">VOLUNTARIADO</a></li>
+                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">EDUCAÇÃO</a></li>
+                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">MORADIA</a></li>
+                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">LGBT</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav__item menu--color" href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+        <img class="nav__hamburger" src="./assets/icons/icon_menu-burger.svg" alt="Ícone do menu da página.">
+    </header>
+
+    <main class="margins">
+        <section class="contact__form">
+            <h2 class="heading__border">Entre em contato</h2>
+            
+            <div class="form__container">
+                <img class="form__img" src="./assets/imgs/carousel_img3.png">
+                <form action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php" method="post">
+                    <div class="input__container--radio">
+                        <div>
+                            <input type="radio" id="tipoContato-ong" name="tipoContato" value="ong"  required><label class="form__subtitle form__subtitle--radio" for="tipoContato-ong">ONG</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="tipoContato-doador" name="tipoContato" value="doador" ><label class="form__subtitle form__subtitle--radio" for="tipoContato-doador">Doador</label>
+                        </div>
+                    </div>
+                    <div class="input__container">
+                        <label class="form__subtitle" for="nomeContato">Nome/ Nome da Organização: </label>
+                        <input type="text" id="nomeContato" name="nomeContato" maxlength="30" required placeholder="Nome/ Nome da Organização">
+                    </div>
+                    <div class="input__container">
+                        <label class="form__subtitle" for="emailContato">E-mail: </label>
+                        <input type="email" id="emailContato" name="emailContato" maxlength="40" required placeholder="E-mail">
+                    </div>
+                    <div class="input__container">
+                        <label class="form__subtitle" for="telContato">Telefone (opcional): </label>
+                        <input type="tel" id="telContato" name="telContato" pattern="[0-9]{11}" placeholder="Telefone">
+                    </div>
+                    <div class="input__container">
+                        <label class="form__subtitle" for="motivoContato">Motivo do contato: </label>
+                        <textarea id="motivoContato" name="motivoContato" required placeholder="Motivo do contato" rows="10"></textarea>
+                    </div>
+                    <input class="form__submit" type="submit" value="Enviar">                
+                </form>
+            </div>
+        </section>
+        <section class="contact__devs">
+            <h2 class="heading__border">Conheça a equipe!</h2>
+            <div class="devs__layout">
+                <div class="card__container">
+                    <img class="card__img" src="./assets/imgs/img_pamella.png" alt="Foto da estudante Pamella Sotomayor. Somente o rosto aparece na foto e ela veste um chapéu de festa de aniversário verde. O fundo é branco.">
+                    <div class="card__content">
+                        <h3>Pamella Sotomayor Lopes</h3>
+                        <span>Desenvolvedora de aplicações web</span>
+                        <p>19 anos. Estudante de Sistemas para Internet na Fatec BS Rubens Lara. Responsável pelo design e CSS. Entusiasta de web design e arte.</p>
+                        <div class="card__socialmedia">
+                            <a href="#" target="_blank"><img src="./assets/icons/icon_linkedin.png" alt="Logo do LinkedIn."></a>
+                            <a href="#" target="_blank"><img src="./assets/icons/icon_insta.png" alt="Logo do Instagram."></a>
+                            <a href="#" target="_blank"><img src="./assets/icons/icon_github.png" alt="Logo do GitHub."></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <img class="card__img" src="./assets/imgs/img_pamella.png" alt="Foto da estudante Pamella Sotomayor. Somente o rosto aparece na foto e ela veste um chapéu de festa de aniversário verde. O fundo é branco.">
+                    <div class="card__content">
+                        <h3>Pamella Sotomayor Lopes</h3>
+                        <span>Desenvolvedora de aplicações web</span>
+                        <p>19 anos. Estudante de Sistemas para Internet na Fatec BS Rubens Lara. Responsável pelo design e CSS. Entusiasta de web design e arte.</p>
+                        <div class="card__socialmedia">
+                            <a href="#" target="_blank"><img src="./assets/icons/icon_linkedin.png" alt="Logo do LinkedIn."></a>
+                            <a href="#" target="_blank"><img src="./assets/icons/icon_insta.png" alt="Logo do Instagram."></a>
+                            <a href="#" target="_blank"><img src="./assets/icons/icon_github.png" alt="Logo do GitHub."></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <img class="card__img" src="./assets/imgs/img_pamella.png" alt="Foto da estudante Pamella Sotomayor. Somente o rosto aparece na foto e ela veste um chapéu de festa de aniversário verde. O fundo é branco.">
+                    <div class="card__content">
+                        <h3>Pamella Sotomayor Lopes</h3>
+                        <span>Desenvolvedora de aplicações web</span>
+                        <p>19 anos. Estudante de Sistemas para Internet na Fatec BS Rubens Lara. Responsável pelo design e CSS. Entusiasta de web design e arte.</p>
+                        <div class="card__socialmedia">
+                            <a href="#" target="_blank"><img src="./assets/icons/icon_linkedin.png" alt="Logo do LinkedIn."></a>
+                            <a href="#" target="_blank"><img src="./assets/icons/icon_insta.png" alt="Logo do Instagram."></a>
+                            <a href="#" target="_blank"><img src="./assets/icons/icon_github.png" alt="Logo do GitHub."></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <img class="card__img" src="./assets/imgs/img_pamella.png" alt="Foto da estudante Pamella Sotomayor. Somente o rosto aparece na foto e ela veste um chapéu de festa de aniversário verde. O fundo é branco.">
+                    <div class="card__content">
+                        <h3>Pamella Sotomayor Lopes</h3>
+                        <span>Desenvolvedora de aplicações web</span>
+                        <p>19 anos. Estudante de Sistemas para Internet na Fatec BS Rubens Lara. Responsável pelo design e CSS. Entusiasta de web design e arte.</p>
+                        <div class="card__socialmedia">
+                            <a href="#" target="_blank"><img src="./assets/icons/icon_linkedin.png" alt="Logo do LinkedIn."></a>
+                            <a href="#" target="_blank"><img src="./assets/icons/icon_insta.png" alt="Logo do Instagram."></a>
+                            <a href="#" target="_blank"><img src="./assets/icons/icon_github.png" alt="Logo do GitHub."></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <img class="card__img" src="./assets/imgs/img_pamella.png" alt="Foto da estudante Pamella Sotomayor. Somente o rosto aparece na foto e ela veste um chapéu de festa de aniversário verde. O fundo é branco.">
+                    <div class="card__content">
+                        <h3>Pamella Sotomayor Lopes</h3>
+                        <span>Desenvolvedora de aplicações web</span>
+                        <p>19 anos. Estudante de Sistemas para Internet na Fatec BS Rubens Lara. Responsável pelo design e CSS. Entusiasta de web design e arte.</p>
+                        <div class="card__socialmedia">
+                            <a href="#" target="_blank"><img src="./assets/icons/icon_linkedin.png" alt="Logo do LinkedIn."></a>
+                            <a href="#" target="_blank"><img src="./assets/icons/icon_insta.png" alt="Logo do Instagram."></a>
+                            <a href="#" target="_blank"><img src="./assets/icons/icon_github.png" alt="Logo do GitHub."></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="project__link">Para conhecer mais sobre o projeto, visite a <a href="#" target="_blank">demo no Figma </a> e a <a href="" target="_blank">página do projeto no GitHub</a>!</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__about">
+            <h5>DivulgaSocial:<br>Impulsionando Causas</h5>
+            <p>A DivulgaSocial é mais do que uma empresa de comunicação. É uma empresa que acredita no poder das causas sociais e que quer fazer a diferença no mundo.</p>
+            <p>Projeto desenvolvidos por alunos do curso de SI.</p>
+        </div> 
+        <div class="footer__sitemap">
+            <h5>Sitemap</h5>
+            <ul>
+                <li><a class="footer-sitemap__item" href="index.html#hero">Home</a></li>
+                <li><a class="footer-sitemap__item" href="index.html#sobre">Sobre nós</a></li>
+                <li><a class="footer-sitemap__item" href="info.html">Como funciona</a></li>
+                <li class="footer-sitemap__item">Ongs Parceiras</li>
+                <li>
+                    <ul class="sitemap__sub-item">
+                        <li><a class="footer-sitemap__item" href="crianca.html">Crianças</a></li>
+                        <li><a class="footer-sitemap__item" href="constru.html">Apoio às mulheres</a></li>
+                        <li><a class="footer-sitemap__item" href="constru.html">Idosos</a></li>
+                        <li><a class="footer-sitemap__item" href="constru.html">Voluntariado</a></li>
+                        <li><a class="footer-sitemap__item" href="constru.html">Educação</a></li>
+                        <li><a class="footer-sitemap__item" href="constru.html">Moradia</a></li>
+                        <li><a class="footer-sitemap__item" href="constru.html">Lgbt</a></li>
+                    </ul>
+                </li>
+                <li><a class="footer-sitemap__item" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer-link__layout">
+            <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_insta.png" alt="Logo do Instagram.">@DivulgaSocial_Baixada</a>
+            <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_facebook.png" alt="Logo do Facebook.">@DivulgaSocial_</a>
+            <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_linkedin.png" alt="Logo do LinkedIn.">DivulgaSocial</a>
+        </div>
+    </footer>
+
+    <script src="./assets/scripts/navmenu.js"></script>
+</body>
+</html>

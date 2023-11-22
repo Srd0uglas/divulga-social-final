@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivulgaSocial | Página em construção...</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <style>
+        h2 { /*criado css interno para evitar criar um monte de .css reduntantes*/
+            font-family: var(--fonte_inter);
+            font-size: var(--fonte_subtitulo-pequeno);
+            padding: 0 15px;
+            margin: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header class="menu__layout">
+        <h1 class="menu__title">DivulgaSocial</h1>
+        <nav>
+            <ul class="nav__layout">
+                <li><a class="nav__item menu--color" href="index.html#hero">HOME</a></li>
+                <li><a class="nav__item menu--color" href="index.html#sobre">SOBRE NÓS</a></li>
+                <li><a class="nav__item menu--color" href="info.html">COMO FUNCIONA?</a></li>
+                <li class="nav__dropdown" onclick="showMenu()">
+                    <span class="nav__item menu--color">ONGS PARCEIRAS <img class="nav__dropdown__icon icon--color" src="assets/icons/icon_seta.svg" alt="Seta apontado para baixo indicando o submenu da categoria."></span>
+                    <ul class="dropdown--content" id="dropdownContent">
+                        <li><a class="nav__item nav__subitem menu--color" href="crianca.html">CRIANÇAS</a></li>
+                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">APOIO ÀS MULHERES</a></li>
+                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">IDOSOS</a></li>
+                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">VOLUNTARIADO</a></li>
+                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">EDUCAÇÃO</a></li>
+                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">MORADIA</a></li>
+                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">LGBT</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav__item menu--color" href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+        <img class="nav__hamburger" src="./assets/icons/icon_menu-burger.svg" alt="Ícone do menu da página.">
+    </header>
+
+    <main>
+        <h2 class="heading__border">Página em construção...</h2>
+    </main>
+
+
+    <footer>
+        <div class="footer__about">
+            <h5>DivulgaSocial:<br>Impulsionando Causas</h5>
+            <p>A DivulgaSocial é mais do que uma empresa de comunicação. É uma empresa que acredita no poder das causas sociais e que quer fazer a diferença no mundo.</p>
+            <p>Projeto desenvolvidos por alunos do curso de SI.</p>
+        </div> 
+        <div class="footer__sitemap">
+            <h5>Sitemap</h5>
+            <ul>
+                <li><a class="footer-sitemap__item" href="index.html#hero">Home</a></li>
+                <li><a class="footer-sitemap__item" href="index.html#sobre">Sobre nós</a></li>
+                <li><a class="footer-sitemap__item" href="info.html">Como funciona</a></li>
+                <li class="footer-sitemap__item">Ongs Parceiras</li>
+                <li>
+                    <ul class="sitemap__sub-item">
+                        <li><a class="footer-sitemap__item" href="crianca.html">Crianças</a></li>
+                        <li><a class="footer-sitemap__item" href="constru.html">Apoio às mulheres</a></li>
+                        <li><a class="footer-sitemap__item" href="constru.html">Idosos</a></li>
+                        <li><a class="footer-sitemap__item" href="constru.html">Voluntariado</a></li>
+                        <li><a class="footer-sitemap__item" href="constru.html">Educação</a></li>
+                        <li><a class="footer-sitemap__item" href="constru.html">Moradia</a></li>
+                        <li><a class="footer-sitemap__item" href="constru.html">Lgbt</a></li>
+                    </ul>
+                </li>
+                <li><a class="footer-sitemap__item" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer-link__layout">
+            <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_insta.png" alt="Logo do Instagram.">@DivulgaSocial_Baixada</a>
+            <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_facebook.png" alt="Logo do Facebook.">@DivulgaSocial_</a>
+            <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_linkedin.png" alt="Logo do LinkedIn.">DivulgaSocial</a>
+        </div>
+    </footer>
+
+    <script src="./assets/scripts/navmenu.js"></script>
+</body>
+</html>

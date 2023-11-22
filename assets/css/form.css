@@ -1,0 +1,124 @@
+.contact__form, .contact__devs { width: 1300px;}
+.contact__form h2,.contact__devs h2 {
+    font-family: var(--fonte_inter);
+    font-size: var(--fonte_subtitulo-pequeno);
+    padding: 0 15px;
+    margin: 0 0 70px 0;
+}
+/* formulário */
+.form__container {
+    display: flex; 
+    justify-content: center;
+    margin: 0 0 70px 0;
+}
+.form__img {
+    border-radius: 15px 0 0 15px;
+    width: 500px;
+    background-color: #777;
+}
+form {
+    padding: 30px 50px;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--cor_azul);
+}
+.input__container {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+.input__container--radio { display: flex; gap: 40px;}
+.form__subtitle {
+    font-family: var(--fonte_inter);
+    font-size: var(--fonte_corpo);
+    color: var(--cor_branco);
+}
+.form__subtitle--radio { margin: 0 10px; }
+
+#nomeContato, #emailContato, #telContato, #motivoContato {
+    width: 450px;
+    font-family: var(--fonte_inter);
+    border-radius: 12px;
+    padding: 10px 15px;
+    resize:none;
+}
+
+.form__submit {
+    padding: 15px 100px;
+    border-radius: 12px;
+    font-family: var(--fonte_inter);
+    font-size: var(--fonte_corpo);
+    color: var(--cor_branco);
+    background-color: var(--cor_laranja);
+}
+
+/*cards dos desenvolvedores*/
+.devs__layout {
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 70px;
+}
+.card__container {
+    width: 100px;
+    height: min-content;
+    position: relative;
+    transition: all ease 1s;
+}
+.card__container:hover { width: min-content; 
+    transition: all ease 1s;} 
+.card__container:hover .card__content { display: block; 
+    transition: all ease 1s;}
+.card__img {
+    margin: 15px;
+    position: absolute;
+    width: 100px;
+    border-radius: 100%;
+}
+.card__content {
+    display: none;
+    width: 400px; 
+    padding: 15px;
+    border-radius: 12px;
+    background-color:#dbdbdb;
+    text-align: end;
+}
+.card__content h3 {
+    font-family: var(--fonte_inter);
+    font-size: var(--fonte_subtitulo-pequeno);
+}
+.card__content span {
+    display: block;
+    margin: 10px 0 60px;
+    font-family: var(--fonte_inter);
+    font-size: var(--fonte_corpo);
+    font-weight: 600;
+    color: var(--cor_cinza);
+}
+.card__content p {
+    font-family: var(--fonte_inter);
+    font-size: var(--fonte_corpo);
+}
+.card__socialmedia {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.project__link {
+    font-family: var(--fonte_inter);
+    font-size: var(--fonte_corpo);
+    font-weight: 600;
+    color: var(--cor_cinza);
+    text-align: center;
+}
+.project__link a { 
+    color: var(--cor_laranja);
+    text-decoration: underline;
+}

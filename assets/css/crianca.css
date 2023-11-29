@@ -1,6 +1,7 @@
-video { 
+iframe { 
     margin: 70px 0;
     width: 100%;
+    height: 60vh;
 }
 .crianca__layout {
     display: flex; 
@@ -100,7 +101,10 @@ video {
 }
 @media screen and (max-width: 1180px) { /* tablet screen */
     .crianca__layout { margin: 35px 30px 70px; }
-    video { margin: 35px 0;}
+    iframe {   
+        height: 40vh;
+        margin: 35px 0;
+    }
     .ong__main { margin-bottom: 0px; }
     .ong-card__img img { border-radius: 7px; }
     .ong__popup { max-width: 90%; }

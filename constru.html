@@ -12,10 +12,17 @@
                 font-family: var(--fonte_inter);
                 font-size: var(--fonte_subtitulo-pequeno);
                 padding: 0 15px;
-                margin: 20vh 20vw 60vh;
+                margin: 20vh 20vw 0;
+            }
+            .img__error {
+                margin: 0 50vw;
             }
             @media screen and (max-width: 1180px) { 
-                h2 { margin: 10vh 10vw 50vh; }
+                h2 { margin: 10vh 5vw; }
+                .img__error {
+                    width: 65vw;
+                margin: 0 5vw;
+            }
             }
         </style>
     </head>
@@ -50,6 +57,7 @@
         </header>
         <main>
             <h2 class="heading__border">Página em construção...</h2>
+            <img class="img__error" src="./assets/imgs/img_404.png" alt="">
         </main>
         <footer>
             <div class="footer__about">

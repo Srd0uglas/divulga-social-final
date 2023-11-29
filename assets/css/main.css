@@ -131,6 +131,3 @@ html { scroll-behavior: smooth; } /*garante que a navegação seja agradável vi
         font-size: var(--fonte_corpo-pequeno);
     }
 }
-@media screen and (max-width: 600px) { /* tablet screen */   
-
-}

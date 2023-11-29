@@ -5,7 +5,7 @@ Um projeto idealizado e desenvolvido por um grupo de alunos. A proposta da taref
 
 ![Foto do site](https://i.imgur.com/WTFWrRb.png)
 
-*[Link para o site](https://link-da-documentação) | 
+*[Link para o site](https://pamesss.github.io/divulga-social-final/index.html) | 
 [Link para o projeto no Figma](https://www.figma.com/file/jQPE5uGCLt8jay2r3N2JvL/PROJETO%3A-DivulgaSocial?type=design&node-id=93%3A117&mode=design&t=YMFIcFIDAaSybUQh-1)*
 #
 ## Conheça a empresa: DivulgaSocial - Baixada Santista
@@ -39,7 +39,7 @@ Outra das etapas era a pesquisa sobre algum assunto relacionado a ideia do proje
 
 Por fim, um dos últimos conteúdos requisitados para o projeto era a produção de um vídeo autoral. Por conta do projeto envolver o nome e imagem de ONGs reais, decidimos visitar um dos locais da região da Baixada Santista, para conhecer e gravar uma entrevista com a responsável pela unidade.
 
-[![Watch the video](https://i.stack.imgur.com/Vp2cE.png)](https://youtu.be/vt5fpE0bzSY)
+[![Watch the video](https://i.imgur.com/KHrNvcc.png)](https://youtu.be/5vvDfhUSL80)
 #
 ### Ferramentas utilizadas
 

@@ -42,14 +42,29 @@
     align-items: center;
     justify-content: center;
     gap: 100px;
+    text-align: justify;
 }
 .info--reversed { flex-flow: row-reverse wrap !important;}
 .info-card img { width: 23vw; }
-.info-card div {
-    width: 700px;
-}
+.info-card div { width: 50vw; }
 .info-card h3 {
     font-size: var(--fonte_subtitulo-pequeno);
     margin: 70px 0 30px;
     padding-left: 15px;
+}
+
+@media screen and (max-width: 1180px) { /* tablet screen */
+    .info__about--1 { display: none;}
+    .info__opening__layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info { margin: 130px 0;}
+    .info__ongs { width: auto;}
+    .ongs__container { align-items: center; }
+    .info-card { gap: 30px; }
+    .info-card img { width: 70vw; }
+    .info-card div { width: 90vw;}
+}
+@media screen and (max-width: 600px) { /* phone screen */ 
 }

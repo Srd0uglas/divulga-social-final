@@ -1,9 +1,23 @@
 /*importando as fontes necessárias para o projeto*/
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@500&family=Inter:wght@400;600;700&display=swap');
 /*importando os componentes do projeto para o arquivo principal*/
+@import url(./hero.css);
+@import url(./header.css);
+@import url(./footer.css);
 @import url(./home.css);
 @import url(./info.css);
+@import url(./crianca.css);
 @import url(./form.css);
+
+html { scroll-behavior: smooth; } /*garante que a navegação seja agradável visualmente*/
+/*reset css*/
+* {
+    margin: 0; padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    border: 0;
+    transition: all ease 0.5s;
+}
 
 :root {
     /*paleta de cores do projeto*/
@@ -18,23 +32,15 @@
     /*fontes e tamanhos padrões*/
     --fonte_grandstander: 'Grandstander', cursive;
     --fonte_inter: 'Inter', sans-serif; 
-    --fonte_titulo: 3rem;
-    --fonte_subtitulo-grande: 2.3rem;
-    --fonte_subtitulo-medio: 1.8rem;
-    --fonte_subtitulo-pequeno: 1.2rem;
-    --fonte_corpo: 1rem;
-}
-html { scroll-behavior: smooth;} /*garante que a navegação seja agradável visualmente*/
-/*reset css*/
-* {
-    margin: 0; padding: 0;
-    text-decoration: none;
-    list-style-type: none;
-    border: 0;
-    transition: all ease 0.5s;
+    --fonte_titulo: 3rem; /*48px*/
+    --fonte_subtitulo-grande: 2.5rem; /*40px*/
+    --fonte_subtitulo-medio: 2rem; /*32px*/
+    --fonte_subtitulo-pequeno: 1.563rem; /*25px*/
+    --fonte_corpo: 1rem; /*16px*/
+    --fonte_corpo-pequeno: 0.8rem;
 }
 
-.margins {
+.main__margins {
     margin: 70px 0;
     display: flex; 
     flex-direction: column; 
@@ -42,54 +48,10 @@ html { scroll-behavior: smooth;} /*garante que a navegação seja agradável vis
 }
 .heading__border { border-left: solid 5px var(--cor_rosa); }
 
-/*cabeçalho => logo / titulo / menu com dropdown responsivo*/
-.menu__layout {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 0 10px 0;
-    gap: 100px;
-}
-.menu__title {
-    font-family: var(--fonte_grandstander);
-    font-size: var(--fonte_subtitulo-grande);
-    font-weight: 500;
-}
-.nav__layout {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 80px;
-}
-.nav__item {
-    font-family: var(--fonte_inter);
-    font-size: var(--fonte_corpo);
-}
-.nav__dropdown { cursor: pointer; position: relative; }
-.dropdown--content {
-    display: none;
-    position: absolute;
-    width: 200px; left: -10px;
-    margin: 10px 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.nav__subitem {
-    display: block;
-    background-color: #D9D9D9;
-    padding: 15px;
-}
-.nav__dropdown__icon { width: var(--fonte_corpo); margin-left: 10px;}
-.nav__hamburger {
-    display: none;
-    width: 1.125em;
-    filter: invert(100%) sepia(0%) saturate(7486%) hue-rotate(102deg) brightness(114%) contrast(101%);
-}
-.menu--color { color: var(--cor_preto);}
-.icon--color { filter: brightness(0%);}
 
 /*botões*/
 .btn {
+    cursor: pointer;
     display: inline-block;
     padding: 15px 40px;
     font-family: var(--fonte_inter);
@@ -100,31 +62,46 @@ html { scroll-behavior: smooth;} /*garante que a navegação seja agradável vis
     box-shadow: 0 2px 3px 0 #00000030;
 }
 .btn2 {
+    cursor: pointer;
     display: block;
     text-align: center;
-    padding: 15px;
-    width: 200px;
+    padding: 18px 0;
+    width: 250px;
     font-family: var(--fonte_inter);
     font-weight: 600;
     font-size: var(--fonte_corpo);
     color: var(--cor_branco);
 }
+.btn--top {
+    cursor: pointer;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50px; right: 80px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--cor_rosa);
+    box-shadow: 0px 5px 5px 0px #00000080;
+} .btn--top img { width: 23px; }
 .btn--azul { background-color: var(--cor_azul); }
+.btn--azul:hover { background-color: var(--cor_laranja); }
 .btn--laranja { background-color: var(--cor_laranja); }
-
-
+.btn--laranja:hover { background-color: var(--cor_azul); }
 
 .divulgue__layout {
     display: flex;
-    margin: 0 100px;
     gap: 150px;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 70px 0;
 }
 .divulgue__layout p {
     font-size: var(--fonte_corpo);
     font-family: var(--fonte_inter);
     font-weight: 500;
-    width: 550px;
+    width: 35vw;
 }
 .divulgue__btn {
     text-align: center;
@@ -132,48 +109,28 @@ html { scroll-behavior: smooth;} /*garante que a navegação seja agradável vis
     height: fit-content;
 }
 
-/*rodapé => sobre a empresa / sitemap / links*/
-footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 200px;
-    padding: 30px 0;
+@media screen and (max-width: 1180px) { /* tablet screen */  
+    .main__margins { 
+        margin: 70px 30px;
+        align-items: flex-start; }
+    .divulgue__layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 35px 0 70px;
+    }
+    .divulgue__layout p { 
+        text-align: center;
+        width: 90vw; }    
+    .btn { 
+        padding: 15px 20px;
+        font-size: var(--fonte_corpo-pequeno);
+    }
+    .btn2 { 
+        padding: 15px 20px;
+        font-size: var(--fonte_corpo-pequeno);
+    }
+}
+@media screen and (max-width: 600px) { /* tablet screen */   
 
-    background-color: var(--cor_rosa);
-}
-.footer__about {
-    width: 400px;
-    margin: 50px 0;
-}
-.footer__about h5, .footer__sitemap h5 {
-    font-size: var(--fonte_subtitulo-pequeno);
-    font-family: var(--fonte_inter);
-    color: var(--cor_branco);
-    margin-bottom: 20px;
-}
-.footer-link__layout {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: auto 0;
-}
-.footer__about p, .footer-link__item {
-    font-size: var(--fonte_corpo);
-    font-family: var(--fonte_inter);
-    color: var(--cor_branco);
-}
-.footer-sitemap__item {
-    font-size: var(--fonte_corpo);
-    font-family: var(--fonte_inter);
-    color: var(--cor_branco);
-    line-height: 22px;
-}
-.sitemap__sub-item { margin-left: 10px;}
-.footer-link__item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }

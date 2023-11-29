@@ -1,0 +1,104 @@
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 10px 0;
+    gap: 150px;
+}
+.menu__layout {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 20px;
+}
+.menu__logo { width: 80px; }
+.menu__title {
+    font-family: var(--fonte_grandstander);
+    font-size: var(--fonte_subtitulo-grande);
+    font-weight: 500;
+}
+.menu--color { color: var(--cor_preto);}
+
+.nav__layout {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 80px;
+}
+.nav__item {
+    font-family: var(--fonte_inter);
+    font-size: var(--fonte_corpo);
+}
+.nav__dropdown { cursor: pointer; position: relative; }
+.dropdown--content {
+    display: none;
+    position: absolute;
+    width: 200px; left: -10px;
+    margin: 10px 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.nav__subitem {
+    display: block;
+    background-color: #D9D9D9;
+    padding: 15px;
+}
+.nav__dropdown__icon { 
+    width: var(--fonte_corpo); 
+    margin-left: 10px;
+}
+.icon--color { filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%); }
+.nav__hamburger { 
+    display: none; 
+    width: 1.3rem;
+}
+
+@media screen and (max-width: 1100px) { /* tablet screen */
+    #nav--switch { display: none;}
+    .menu {
+        position: relative;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0 30px;
+        padding: 50px 0 10px 0;
+        gap: 20px;
+    }
+    .menu__layout { gap: 10px; }
+    .menu__logo { width: 60px; }
+    .nav__layout { 
+        position: absolute;
+        width: 230px;
+        top: 12vh; right: 2vw;
+        background-color: #D9D9D9;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 5px; 
+        z-index: 2;
+    }
+    .nav__hamburger { display: block; }
+    .nav__layout li { padding: 15px; }
+    .dropdown--content {
+        position: relative;
+        width: fit-content;
+        box-shadow: none;
+        z-index: 0;
+    }
+    .dropdown--content li { background-color: transparent; }
+    .nav__subitem {
+        background-color: transparent;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) { /* phone screen */
+    #nav--switch { display: none;}
+    .menu { 
+        gap: 0px; 
+        margin: 0px 25px;
+    }
+    .menu__title { font-size: var(--fonte_subtitulo-medio); }
+    .nav__layout { 
+        gap: 0px; 
+        top: 15vh;
+    }
+}

@@ -1,186 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DivulgaSocial | Crianças</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
-<body>
-    <header class="menu__layout">
-        <h1 class="menu__title">DivulgaSocial</h1>
-        <nav>
-            <ul class="nav__layout">
-                <li><a class="nav__item menu--color" href="index.html#hero">HOME</a></li>
-                <li><a class="nav__item menu--color" href="index.html#sobre">SOBRE NÓS</a></li>
-                <li><a class="nav__item menu--color" href="info.html">COMO FUNCIONA?</a></li>
-                <li class="nav__dropdown" onclick="showMenu()">
-                    <span class="nav__item menu--color">ONGS PARCEIRAS <img class="nav__dropdown__icon icon--color" src="assets/icons/icon_seta.svg" alt="Seta apontado para baixo indicando o submenu da categoria."></span>
-                    <ul class="dropdown--content" id="dropdownContent">
-                        <li><a class="nav__item nav__subitem menu--color" href="crianca.html">CRIANÇAS</a></li>
-                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">APOIO ÀS MULHERES</a></li>
-                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">IDOSOS</a></li>
-                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">VOLUNTARIADO</a></li>
-                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">EDUCAÇÃO</a></li>
-                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">MORADIA</a></li>
-                        <li><a class="nav__item nav__subitem menu--color" href="constru.html">LGBT</a></li>
-                    </ul>
-                </li>
-                <li><a class="nav__item menu--color" href="contato.html">CONTATO</a></li>
-            </ul>
-        </nav>
-        <img class="nav__hamburger" src="./assets/icons/icon_menu-burger.svg" alt="Ícone do menu da página.">
-    </header>
-    <main>
-        <section>
-            <video width="50%" height="50%" controls>
-                <source src="LINK DO VIDEO" type="video/mp4"> <!-- TESTAR EM VARIOS NAVEGADORES PRA VER SE PRECISA COLOCAR MAIS DE UM TYPE  -->
-                Seu navegador não suporta o elemento de vídeo.
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DivulgaSocial | Crianças</title>
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <a class="btn--top" href="#menu"><img src="./assets/icons/icon_seta2.svg" alt="Seta branca apontando para cima."></a>
+        <header id="menu" class="menu">
+            <div class="menu__layout">
+                <img class="menu__logo" src="./assets/icons/icon_divulgasocial.png" alt="">
+                <h1 class="menu__title menu--color">DivulgaSocial</h1>
+            </div>  
+            <nav>
+                <ul id="nav--switch" class="nav__layout">
+                    <li><a class="nav__item menu--color" href="index.html#hero">HOME</a></li>
+                    <li><a class="nav__item menu--color" href="index.html#sobre">SOBRE NÓS</a></li>
+                    <li><a class="nav__item menu--color" href="info.html">COMO FUNCIONA?</a></li>
+                    <li class="nav__dropdown">
+                        <span class="nav__item menu--color">ONGS PARCEIRAS <img class="nav__dropdown__icon icon--color" src="assets/icons/icon_seta.svg" alt="Seta apontado para baixo indicando o submenu da categoria."></span>
+                        <ul class="dropdown--content" id="dropdownContent">
+                            <li><a class="nav__item nav__subitem menu--color" href="crianca.html">CRIANÇAS</a></li>
+                            <li><a class="nav__item nav__subitem menu--color" href="constru.html">APOIO ÀS MULHERES</a></li>
+                            <li><a class="nav__item nav__subitem menu--color" href="constru.html">IDOSOS</a></li>
+                            <li><a class="nav__item nav__subitem menu--color" href="constru.html">VOLUNTARIADO</a></li>
+                            <li><a class="nav__item nav__subitem menu--color" href="constru.html">EDUCAÇÃO</a></li>
+                            <li><a class="nav__item nav__subitem menu--color" href="constru.html">MORADIA</a></li>
+                            <li><a class="nav__item nav__subitem menu--color" href="constru.html">LGBT</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav__item menu--color" href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+            <img class="nav__hamburger" src="./assets/icons/icon_menu-burger.svg" alt="Ícone do menu da página.">
+        </header>
+        <main>
+            <video controls>
+                <source src="LINK DO VIDEO" type="video/mp4">
+                <!-- TESTAR EM VARIOS NAVEGADORES PRA VER SE PRECISA COLOCAR MAIS DE UM TYPE  -->
             </video>
-        </section>
-
-        <section>
-            <!-- case de destaque -->
-            <img src="" alt="">
-            
-            <h3>Casa da Vó Benedita</h3>
-            
-            <p>A DivulgaSocial é mais do que uma empresa de comunicação. É uma empresa que acredita no poder das causas sociais e que quer fazer a diferença no mundo. Ao escolher a DivulgaSocial, você:</p>
-            
-            <ul>
-                <li>Ganha visibilidade e credibilidade para o seu projeto social;</li>
-                <li>Aumenta o seu alcance e o seu engajamento com o seu público-alvo;</li>
-                <li>Economiza tempo e dinheiro com soluções personalizadas e eficientes;</li>
-                <li>Contribui para a transformação social positiva da sua comunidade.</li>
-            </ul>
-            <!--  -->
-
-            <!-- cards das ongs -->
-            
-            <div class="card">
-                <img src="sua-imagem.jpg" alt="Imagem do Card">
-                <div class="card-content">
-                    <h3>Título do Card</h3>
-                    <img  link para as redes src="" alt="">
-                    <img  link para as redes src="" alt="">
-                    <p>blablalbalblblbalblablablablalbalblablablablalbalblba<br> 
-                        Endereço: <br>
-                        Telefone para contato:
-                    </p>
+            <section class="crianca__layout">
+                <!-- case de destaque -->
+                <article class="ong__main">
+                    <img class="ong__img" src="./assets/imgs/img_vobenedita.png" alt="Logo da Instituição Casa da Vó Benedita. A Logo é composta de uma mulher negra sorrindo, vestindo um lenço no cabelo e vestido azuis. A imagem inclui o texto Vó Benedita e Santos - SP.">
+                    <div class="ong__text">
+                        <h2 class="heading__border">Casa da Vó Benedita</h2>
+                
+                        <p>A entidade CASA VÓ BENEDITA acolhe crianças encaminhadas pelo Juiz da Infância e da Juventude, e as desenvolve em projetos para integração social.<br>Uma vez acolhidas na CVB recebem alimentação, assistência à saúde, higiene, lazer, educação, atendimento psicossocial e muito afeto.</p>
+                        
+                        <div class="ong__address">
+                            <p>UNIDADE 1&#58;</p>
+                            <p>Endereço&#58; Rua Carlos Caldeira, 675 &#45; Jd. Santa Maria</p>
+                            <p>Tel&#58; <a href="tel:1332995415">&#40;13&#41; 3299&#45;5415</a></p>
+                        </div>
+                        <div class="ong__address">
+                            <p>UNIDADE 2&#58;</p>
+                            <p>Endereço&#58; Rua Uruguai, 11 &#45; Vila Nova</p>
+                            <p>Tel&#58; <a href="tel:1332236659">&#40;13&#41; 3223&#45;6659</a></p>
+                        </div>
+                        <div class="ong__address">
+                            <p>UNIDADE 3&#58;</p>
+                            <p>Endereço&#58; Av. Conselheiro Nébias, 126 &#45; Centro</p>
+                            <p>Tel&#58; <a href="tel:1332222072">&#40;13&#41; 3222&#45;2072</a></p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <h2 class="ong-cards__title heading__border">Conheça nossas ONGs parceiras&#58;</h2>
+                <div class="ong-cards crianca__layout">
+                    <!-- CARD - CASA DA CRIANÇA -->
+                    <div class="ong-card">
+                        <div class="ong-card__img"><img src="./assets/imgs/img_casadacrianca-ong.png" alt=""></div>
+                        <div class="ong-card__content">
+                            <h3>Casa da criança</h3>
+                            <p>A Associação Casa da Criança de Santos participou intensamente no auxílio à Comunidade Santista, abrigando crianças que se tornaram órfãs. A Entidade, durante cento e trinta anos e contando, foi passando por muitas transformações, adequando-se para cada vez melhor atender e educar as crianças abrigadas.</p>
+                            <div class="ong-card__address">
+                                <div>
+                                    <p>Dados de contato&#58;</p>
+                                    <p>Endereço&#58; Av. Conselheiro Rodrigues Alves, 120 &#45; Macuco<br>CEP 11015&#45;200 &#45; Santos&#47;SP</p>
+                                    <p>Tel&#58; <a href="tel:1332224500">&#40;13&#41; 3222&#45;4500</a><br>
+                                    Cel&#58; <a href="tel:13998044999">&#40;13&#41; 99804&#45;4999</a></p>
+                                </div>
+                                <div class="ong-card__socialmedia">
+                                    <a href="https://www.facebook.com/casadacriancasantos" target="_blank"><img src="./assets/icons/icon_facebook.png" alt="Logo do Facebook."></a>
+                                    <a href="tel:13998044999"><img src="./assets/icons/icon_whatsapp.png" alt="Logo do WhatsApp"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD - ALMA-->
+                    <div class="ong-card">
+                        <div class="ong-card__img"><img src="./assets/imgs/img_alma-ong.png" alt=""></div>
+                        <div class="ong-card__content">
+                            <h3>Alma - Associação de Amigos do Lar do Menor Assistido</h3>
+                            <p>A Associação de amigos do Lar do Menor Assistido (ALMA) foi fundado em 1992 amparando crianças e adolescentes, vítimas de maus tratos, abandono, violência sexual e negligência, que são privadas do convívio familiar por estarem em situação de vulnerabilidade. A ALMA atende 17 crianças e tem a capacidade para 20 (crianças e adolescentes).</p>
+                            <div class="ong-card__address">
+                                <div>
+                                    <p>Dados de contato&#58;</p>
+                                    <p>Endereço&#58; Av. Castelo Branco, 731<br>Jardim Cunhambebe &#40;Vicente de Carvalho&#41; &#45; Guarujá&#47;SP</p>
+                                    <p>Tel&#58; <a href="tel:1333525641">&#40;13&#41; 3352&#45;5641</a></p>
+                                </div>
+                                <div class="ong-card__socialmedia">
+                                    <a href="https://www.facebook.com/cmdcaguaruja" target="_blank"><img src="./assets/icons/icon_facebook.png" alt=""></a>
+                                    <a href="https://www.instagram.com/cmdcaguaruja/" target="_blank"><img src="./assets/icons/icon_instagram.png" alt="Logo do Facebook."></a>
+                                    <a href="tel:13991048396"><img src="./assets/icons/icon_whatsapp.png" alt="Logo do WhatsApp"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD - GOTA DE LEITE -->
+                    <div class="ong-card">
+                        <div class="ong-card__img"><img src="./assets/imgs/img_gotadeleite-ong.png" alt=""></div>
+                        <div class="ong-card__content">
+                            <h3>Gota de Leite</h3>
+                            <p>A Assistência a Infância de Santos Gota de Leite é uma instituição privada, filantrópica, sem fins lucrativos, que atende crianças de 11 meses a 5 anos e 11 meses na creche e pré-escola, além das crianças e adolescentes, de 6 a 17 anos, nos projetos Musicalidade na Gota e Gotas no Judô.</p>
+                            <div class="ong-card__address">
+                                <div>
+                                    <p>Dados de contato&#58;</p>
+                                    <p>Endereço&#58; Av. Conselheiro Nébias, 388<br>Encruzilhada &#45; Santos &#45; SP, 11045&#45;000</p>
+                                    <p>Cel&#58; <a href="tel:1332020220">&#40;13&#41; 3202-0220</a></p>
+                                </div>
+                                <div class="ong-card__socialmedia">
+                                    <a href="https://www.facebook.com/ais.gotadeleite/" target="_blank"><img src="./assets/icons/icon_facebook.png" alt="Logo do Facebook."></a>
+                                    <a href="https://www.instagram.com/gotadeleite/" target="_blank"><img src="./assets/icons/icon_instagram.png" alt="Logo do Instagram."></a>
+                                    <a href="tel:1332020220"><img src="./assets/icons/icon_whatsapp.png" alt="Logo do WhatsApp"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
+            <section class="divulgue__layout">
+                <p>Se você tem um projeto social que precisa de mais visibilidade, apoio e impacto, entre em contato conosco e solicite um orçamento sem compromisso.<br>A DivulgaSocial está pronta para te ajudar a fazer a diferença!
+                </p>
+                <a class="divulgue__btn btn btn--laranja" href="contato.html">TEM UMA ONG? PARTICIPE!</a>
+            </section>
+        </main>
+        <footer>
+            <div class="footer__about">
+                <h5>DivulgaSocial:<br>Impulsionando Causas</h5>
+                <p>A DivulgaSocial é mais do que uma empresa de comunicação. É uma empresa que acredita no poder das causas sociais e que quer fazer a diferença no mundo.</p>
+                <p>Projeto desenvolvidos por alunos do curso de SI.</p>
+            </div> 
+            <div class="footer__sitemap">
+                <h5>Sitemap</h5>
+                <ul>
+                    <li><a class="footer-sitemap__item" href="index.html#hero">Home</a></li>
+                    <li><a class="footer-sitemap__item" href="index.html#sobre">Sobre nós</a></li>
+                    <li><a class="footer-sitemap__item" href="info.html">Como funciona</a></li>
+                    <li class="footer-sitemap__item">Ongs Parceiras</li>
+                    <li>
+                        <ul class="sitemap__sub-item">
+                            <li><a class="footer-sitemap__item" href="crianca.html">Crianças</a></li>
+                            <li><a class="footer-sitemap__item" href="constru.html">Apoio às mulheres</a></li>
+                            <li><a class="footer-sitemap__item" href="constru.html">Idosos</a></li>
+                            <li><a class="footer-sitemap__item" href="constru.html">Voluntariado</a></li>
+                            <li><a class="footer-sitemap__item" href="constru.html">Educação</a></li>
+                            <li><a class="footer-sitemap__item" href="constru.html">Moradia</a></li>
+                            <li><a class="footer-sitemap__item" href="constru.html">Lgbt</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="footer-sitemap__item" href="contato.html">Contato</a></li>
+                </ul>
             </div>
-            
-            <div class="card">
-                <img src="sua-imagem.jpg" alt="Imagem do Card">
-                <div class="card-content">
-                    <h3>Título do Card</h3>
-                    <img  link para as redes src="" alt="">
-                    <img  link para as redes src="" alt="">
-                    <p>blablalbalblblbalblablablablalbalblablablablalbalblba<br> 
-                        Endereço: <br>
-                        Telefone para contato:
-                    </p>
-                </div>
+            <div class="footer-link__layout">
+                <h5>Redes sociais</h5>
+                <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_instagram--branco.png" alt="Logo do Instagram.">@DivulgaSocial_Baixada</a>
+                <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_facebook--branco.png" alt="Logo do Facebook.">@DivulgaSocial_</a>
+                <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_linkedin--branco.png" alt="Logo do LinkedIn.">DivulgaSocial</a>
             </div>
-
-            <div class="card">
-                <img src="sua-imagem.jpg" alt="Imagem do Card">
-                <div class="card-content">
-                    <h3>Título do Card</h3>
-                    <img  link para as redes src="" alt="">
-                    <img  link para as redes src="" alt="">
-                    <p>blablalbalblblbalblablablablalbalblablablablalbalblba<br> 
-                        Endereço: <br>
-                        Telefone para contato:
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="sua-imagem.jpg" alt="Imagem do Card">
-                <div class="card-content">
-                    <h3>Título do Card</h3>
-                    <img  link para as redes src="" alt="">
-                    <img  link para as redes src="" alt="">
-                    <p>blablalbalblblbalblablablablalbalblablablablalbalblba<br> 
-                        Endereço: <br>
-                        Telefone para contato:
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="sua-imagem.jpg" alt="Imagem do Card">
-                <div class="card-content">
-                    <h3>Título do Card</h3>
-                    <img  link para as redes src="" alt="">
-                    <img  link para as redes src="" alt="">
-                    <p>blablalbalblblbalblablablablalbalblablablablalbalblba<br> 
-                        Endereço: <br>
-                        Telefone para contato:
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="sua-imagem.jpg" alt="Imagem do Card">
-                <div class="card-content">
-                    <h3>Título do Card</h3>
-                    <img  link para as redes src="" alt="">
-                    <img  link para as redes src="" alt="">
-                    <p>blablalbalblblbalblablablablalbalblablablablalbalblba<br> 
-                        Endereço: <br>
-                        Telefone para contato:
-                    </p>
-                </div>
-            </div>
-
-            <!--  -->
-        </section>
-    
-    
-    
-        <section class="divulgue__layout">
-            <p>Se você tem um projeto social que precisa de mais visibilidade, apoio e impacto, entre em contato conosco e solicite um orçamento sem compromisso.<br>A DivulgaSocial está pronta para te ajudar a fazer a diferença!
-            </p>
-            <a class="divulgue__btn btn btn--laranja">TEM UMA ONG? PARTICIPE!</a>
-        </section>
-    </main>
-    <footer>
-        <div class="footer__about">
-            <h5>DivulgaSocial:<br>Impulsionando Causas</h5>
-            <p>A DivulgaSocial é mais do que uma empresa de comunicação. É uma empresa que acredita no poder das causas sociais e que quer fazer a diferença no mundo.</p>
-            <p>Projeto desenvolvidos por alunos do curso de SI.</p>
-        </div> 
-        <div class="footer__sitemap">
-            <h5>Sitemap</h5>
-            <ul>
-                <li><a class="footer-sitemap__item" href="index.html#hero">Home</a></li>
-                <li><a class="footer-sitemap__item" href="index.html#sobre">Sobre nós</a></li>
-                <li><a class="footer-sitemap__item" href="info.html">Como funciona</a></li>
-                <li class="footer-sitemap__item">Ongs Parceiras</li>
-                <li>
-                    <ul class="sitemap__sub-item">
-                        <li><a class="footer-sitemap__item" href="crianca.html">Crianças</a></li>
-                        <li><a class="footer-sitemap__item" href="constru.html">Apoio às mulheres</a></li>
-                        <li><a class="footer-sitemap__item" href="constru.html">Idosos</a></li>
-                        <li><a class="footer-sitemap__item" href="constru.html">Voluntariado</a></li>
-                        <li><a class="footer-sitemap__item" href="constru.html">Educação</a></li>
-                        <li><a class="footer-sitemap__item" href="constru.html">Moradia</a></li>
-                        <li><a class="footer-sitemap__item" href="constru.html">Lgbt</a></li>
-                    </ul>
-                </li>
-                <li><a class="footer-sitemap__item" href="contato.html">Contato</a></li>
-            </ul>
-        </div>
-        <div class="footer-link__layout">
-            <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_insta.png" alt="Logo do Instagram.">@DivulgaSocial_Baixada</a>
-            <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_facebook.png" alt="Logo do Facebook.">@DivulgaSocial_</a>
-            <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_linkedin.png" alt="Logo do LinkedIn.">DivulgaSocial</a>
-        </div>
-    </footer>
-
-    <script src="./assets/scripts/navmenu.js"></script>
-</body>
+        </footer>
+        <script src="./assets/scripts/navmenu.js"></script>
+        <script src="./assets/scripts/openimages.js"></script>
+    </body>
 </html>

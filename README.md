@@ -3,14 +3,14 @@
 Um projeto idealizado e desenvolvido por um grupo de alunos. A proposta da tarefa é aplicar os conhecimentos passados em sala e construir conteúdos relevantes, que poderiam ser usufruidos por uma empresa real ou fictícia em seu site.
 
 
-![Foto do site](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Foto do site](https://i.imgur.com/WTFWrRb.png)
 
 *[Link para o site](https://link-da-documentação) | 
-[Link para o projeto no Figma](https://link-da-documentação)*
+[Link para o projeto no Figma](https://www.figma.com/file/jQPE5uGCLt8jay2r3N2JvL/PROJETO%3A-DivulgaSocial?type=design&node-id=93%3A117&mode=design&t=YMFIcFIDAaSybUQh-1)*
 #
 ## Conheça a empresa: DivulgaSocial - Baixada Santista
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](https://i.imgur.com/XopXEBO.png)
 
 Uma empresa de Marketing dedicada a promover projetos de ONGs, trazendo tráfego e atenção aos projetos com técnicas inovadoras de divulgação e engajamento. 
 Seu público-alvo almeja ONGs que precisam de divulgação e pessoas que desejam apoiar ONGs, incluindo doadores em potencial e voluntários. 
@@ -24,7 +24,7 @@ Seu público-alvo almeja ONGs que precisam de divulgação e pessoas que desejam
 Uma das etapas do projeto é a importância de desenvolver um conceito voltado para alguém. Muitas vezes, esse alguém se torna algo abstrato e é ai que aplicamos PERSONAS. Que idealizam o público-alvo e humanizam, nos levando a considerar suas dificuldades e vontades.
 
 A persona que desenvolvemos para esse projeto é o Daniel Silva, leia mais sobre ele abaixo:
-![Persona](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Persona](https://i.imgur.com/Vei6bIw.png)
 
 
 #
@@ -32,7 +32,7 @@ A persona que desenvolvemos para esse projeto é o Daniel Silva, leia mais sobre
 
 Outra das etapas era a pesquisa sobre algum assunto relacionado a ideia do projeto. Acreditamos que o conceito de ONGS e como elas funcionam é muito abstrato, então montamos um infográfico que busca explicar as dúvidas mais comum sobre essas entidades.
 
-![Infográfico](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Infográfico](https://i.imgur.com/eCKZcT6.png)
 
 
 ## Conheça a Casa da Vó Benedita: Entrevista em vídeo e visita ao local
@@ -50,7 +50,7 @@ Por fim, um dos últimos conteúdos requisitados para o projeto era a produção
 #
 ### Desenvolvedores
 **Alunos de SI responsáveis pelo projeto:**
-[@Aluno](https://www.github.com/octokatherine) | [@Aluno](https://www.github.com/octokatherine) | [@Aluno](https://www.github.com/octokatherine) | [@Aluno](https://www.github.com/octokatherine) | [@Aluno](https://www.github.com/octokatherine)
+[@pamesss](https://github.com/pamesss) | [@egbulsoni](https://github.com/egbulsoni/) | [@heb-k](https://github.com/heb-k/) | [@Edu-Victor](https://github.com/Edu-Victor) | [@Srd0uglas](https://github.com/Srd0uglas)
 
 **Professora responsável pelo projeto:** Professora Vanina Sigrist;
 

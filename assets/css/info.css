@@ -1,21 +1,55 @@
 .info__opening__layout { 
     display: flex;
-    gap: 100px;
+    gap: 150px;
 }
 
-.info__ongs { width: 350px; }
+.info__ongs { width: 450px; }
 .info__btn__layout {
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
-    gap: 20px 30px;
+    gap: 50px 30px;
 }
+.info__about--1 {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    gap: 30px;
+}
+.info__about--1 img { width: 45vw; }
 .info__about--1 h3 {
     font-family: var(--fonte_inter);
     font-size: var(--fonte_subtitulo-medio);
     color: var(--cor_preto);
     text-align: end;
+    padding-left: 15px;
 }
-.infographic {
+.info__about--1 p {
     font-family: var(--fonte_inter);
+    font-size: var(--fonte_corpo);
+    width: 1000px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    font-family: var(--fonte_inter);
+    margin: 300px 70px 100px;
+}
+.info-card {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.info--reversed { flex-flow: row-reverse wrap !important;}
+.info-card img { width: 23vw; }
+.info-card div {
+    width: 700px;
+}
+.info-card h3 {
+    font-size: var(--fonte_subtitulo-pequeno);
+    margin: 70px 0 30px;
+    padding-left: 15px;
 }

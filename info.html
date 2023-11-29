@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DivulgaSocial | Como funciona?</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
-<body>
-    <header class="menu__layout">
-            <h1 class="menu__title">DivulgaSocial</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DivulgaSocial | Como funciona?</title>
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <a class="btn--top" href="#menu"><img src="./assets/icons/icon_seta2.svg" alt="Seta branca apontando para cima."></a>
+        <header id="menu" class="menu">
+            <div class="menu__layout">
+                <img class="menu__logo" src="./assets/icons/icon_divulgasocial.png" alt="">
+                <h1 class="menu__title menu--color">DivulgaSocial</h1>
+            </div>  
             <nav>
-                <ul class="nav__layout">
+                <ul id="nav--switch" class="nav__layout">
                     <li><a class="nav__item menu--color" href="index.html#hero">HOME</a></li>
                     <li><a class="nav__item menu--color" href="index.html#sobre">SOBRE NÓS</a></li>
                     <li><a class="nav__item menu--color" href="info.html">COMO FUNCIONA?</a></li>
-                    <li class="nav__dropdown" onclick="showMenu()">
+                    <li class="nav__dropdown">
                         <span class="nav__item menu--color">ONGS PARCEIRAS <img class="nav__dropdown__icon icon--color" src="assets/icons/icon_seta.svg" alt="Seta apontado para baixo indicando o submenu da categoria."></span>
                         <ul class="dropdown--content" id="dropdownContent">
                             <li><a class="nav__item nav__subitem menu--color" href="crianca.html">CRIANÇAS</a></li>
@@ -31,97 +36,98 @@
                 </ul>
             </nav>
             <img class="nav__hamburger" src="./assets/icons/icon_menu-burger.svg" alt="Ícone do menu da página.">
-    </header>
-    <main class="margins">
-        <div class="info__opening__layout">
-            <section class="ongs__container info__ongs">
-                <h2>Conheça nossas ONGs parceiras</h2>
-                <ul class="info__btn__layout">
-                    <li><a class="btn2 btn--laranja" href="crianca.html">CRIANÇAS</a></li>
-                    <li><a class="btn2 btn--laranja" href="constru.html">APOIO ÀS MULHERES</a></li>
-                    <li><a class="btn2 btn--laranja" href="constru.html">IDOSOS</a></li>
-                    <li><a class="btn2 btn--laranja" href="constru.html">VOLUNTARIADO</a></li>
-                    <li><a class="btn2 btn--laranja" href="constru.html">EDUCAÇÃO</a></li>
-                    <li><a class="btn2 btn--laranja" href="constru.html">MORADIA</a></li>
-                    <li><a class="btn2 btn--laranja" href="constru.html">LGBT</a></li>
-                </ul>
-            </section>
-            <article class="info__about--1">
-                <h3>Como funciona?</h3>
-                <img src="" alt="">
-                <p>A DivulgaSocial é mais do que uma empresa de comunicação. É uma empresa que acredita no poder das causas sociais e que quer fazer a diferença no mundo. Ao escolher a DivulgaSocial, você:</p>
-                <ul>
-                    <li>Ganha visibilidade e credibilidade para o seu projeto social;</li>
-                    <li>Aumenta o seu alcance e o seu engajamento com o seu público-alvo;</li>
-                    <li>Economiza tempo e dinheiro com soluções personalizadas e eficientes;</li>
-                    <li>Contribui para a transformação social positiva da sua comunidade.</li>
-                </ul>
-            </article>
-        </div>    
-
-        <section class="infographic">
-            <h3>O que é uma ONG?</h3>
-            <p>Se você tem um projeto social que precisa de mais visibilidade, apoio e impacto, entre em contato conosco e solicite um orçamento sem compromisso.</p>
-            <p>A DivulgaSocial está pronta para te ajudar a fazer a diferença!</p>
-            <img src="" alt="">
-
-            <h3>O que é uma ONG?</h3>
-            <p>Se você tem um projeto social que precisa de mais visibilidade, apoio e impacto, entre em contato conosco e solicite um orçamento sem compromisso.</p>
-            <p>A DivulgaSocial está pronta para te ajudar a fazer a diferença!</p>
-            <img src="" alt="">
-
-            <h3>O que é uma ONG?</h3>
-            <p>Se você tem um projeto social que precisa de mais visibilidade, apoio e impacto, entre em contato conosco e solicite um orçamento sem compromisso.</p>
-            <p>A DivulgaSocial está pronta para te ajudar a fazer a diferença!</p>
-            <img src="" alt="">
-
-            <h3>O que é uma ONG?</h3>
-            <p>Se você tem um projeto social que precisa de mais visibilidade, apoio e impacto, entre em contato conosco e solicite um orçamento sem compromisso.</p>
-            <p>A DivulgaSocial está pronta para te ajudar a fazer a diferença!</p>
-            <img src="" alt="">
-        </section>
-
-        <section class="divulgue__layout">
-            <p>Se você tem um projeto social que precisa de mais visibilidade, apoio e impacto, entre em contato conosco e solicite um orçamento sem compromisso.<br>A DivulgaSocial está pronta para te ajudar a fazer a diferença!
-            </p>
-            <a class="divulgue__btn btn btn--laranja">TEM UMA ONG? PARTICIPE!</a>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="footer__about">
-            <h5>DivulgaSocial:<br>Impulsionando Causas</h5>
-            <p>A DivulgaSocial é mais do que uma empresa de comunicação. É uma empresa que acredita no poder das causas sociais e que quer fazer a diferença no mundo.</p>
-            <p>Projeto desenvolvidos por alunos do curso de SI.</p>
-        </div> 
-        <div class="footer__sitemap">
-            <h5>Sitemap</h5>
-            <ul>
-                <li><a class="footer-sitemap__item" href="index.html#hero">Home</a></li>
-                <li><a class="footer-sitemap__item" href="index.html#sobre">Sobre nós</a></li>
-                <li><a class="footer-sitemap__item" href="info.html">Como funciona</a></li>
-                <li class="footer-sitemap__item">Ongs Parceiras</li>
-                <li>
-                    <ul class="sitemap__sub-item">
-                        <li><a class="footer-sitemap__item" href="crianca.html">Crianças</a></li>
-                        <li><a class="footer-sitemap__item" href="constru.html">Apoio às mulheres</a></li>
-                        <li><a class="footer-sitemap__item" href="constru.html">Idosos</a></li>
-                        <li><a class="footer-sitemap__item" href="constru.html">Voluntariado</a></li>
-                        <li><a class="footer-sitemap__item" href="constru.html">Educação</a></li>
-                        <li><a class="footer-sitemap__item" href="constru.html">Moradia</a></li>
-                        <li><a class="footer-sitemap__item" href="constru.html">Lgbt</a></li>
+        </header>
+        <main class="main__margins">
+            <div class="info__opening__layout">
+                <section class="ongs__container info__ongs">
+                    <h2>Conheça nossas ONGs parceiras</h2>
+                    <ul class="info__btn__layout">
+                        <li><a class="btn2 btn--laranja" href="crianca.html">CRIANÇAS</a></li>
+                        <li><a class="btn2 btn--laranja" href="constru.html">APOIO ÀS MULHERES</a></li>
+                        <li><a class="btn2 btn--laranja" href="constru.html">IDOSOS</a></li>
+                        <li><a class="btn2 btn--laranja" href="constru.html">VOLUNTARIADO</a></li>
+                        <li><a class="btn2 btn--laranja" href="constru.html">EDUCAÇÃO</a></li>
+                        <li><a class="btn2 btn--laranja" href="constru.html">MORADIA</a></li>
+                        <li><a class="btn2 btn--laranja" href="constru.html">LGBT</a></li>
                     </ul>
-                </li>
-                <li><a class="footer-sitemap__item" href="contato.html">Contato</a></li>
-            </ul>
-        </div>
-        <div class="footer-link__layout">
-            <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_insta.png" alt="Logo do Instagram.">@DivulgaSocial_Baixada</a>
-            <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_facebook.png" alt="Logo do Facebook.">@DivulgaSocial_</a>
-            <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_linkedin.png" alt="Logo do LinkedIn.">DivulgaSocial</a>
-        </div>
-    </footer>
-
-    <script src="./assets/scripts/navmenu.js"></script>
-</body>
+                </section>
+                <article class="info__about--1">
+                    <h3>Como funcionam?</h3>
+                    <img src="./assets/imgs/img__info.png" alt="">
+                    <p>As ONGs funcionam de maneira versátil, atuando em diversas áreas para prestar serviços à comunidade, advogar por causas. Uma característica essencial desse modelo é sua dependência de doações, seja de indivíduos, empresas ou organizações.<br><br>Essas organizações desempenham um papel fundamental como agentes de transformação, causando um largo impacto social positivo.</p>
+                </article>
+            </div>    
+            <section class="info">
+                <article class="info-card">
+                    <img src="./assets/imgs/img_oqueong.png" alt="">
+                    <div>
+                        <h3 class="heading__border">O que é uma ONG?</h3>
+                        <p>As Organizações Não Governamentais, conhecidas como ONGs, desempenham um papel vital na sociedade, agindo como entidades independentes do governo e sem fins lucrativos. Estas organizações são movidas por um propósito maior, muitas vezes dedicando-se a causas humanitárias, ambientais ou sociais.<br><br>Sua independência financeira permite que atuem de forma imparcial, buscando soluções e implementando projetos que visam o bem-estar da comunidade e do planeta como um todo. </p>
+                    </div>
+                </article>
+                <article class="info-card info--reversed">
+                    <img src="./assets/imgs/img_comofunciona.png" alt="">
+                    <div>
+                        <h3 class="heading__border">Como funcionam?</h3>
+                        <p>As ONGs funcionam de maneira versátil, atuando em diversas áreas para prestar serviços à comunidade, advogar por causas. Uma característica essencial desse modelo é sua dependência de doações, seja de indivíduos, empresas ou organizações.<br><br>Essas organizações desempenham um papel fundamental como agentes de transformação, causando um largo impacto social positivo.</p>
+                    </div>
+                </article>
+                <article class="info-card">
+                    <img src="./assets/imgs/img_importancia.png" alt="">
+                    <div>
+                        <h3 class="heading__border">Por que são importantes?</h3>
+                        <p>O trabalho incansável das ONGs muitas vezes preenche lacunas deixadas por instituições governamentais, oferecendo assistência onde é mais necessária e advogando por mudanças positivas. A capacidade das ONGs em promover mudanças sociais é inestimável, pois catalisam transformações positivas, inspiram engajamento cívico e estimulam a consciência coletiva sobre questões cruciais.<br><br>Em essência, as ONGs representam a força da sociedade civil, mobilizando recursos e esforços para enfrentar desafios globais e construir um mundo mais justo e solidário.</p>
+                    </div>
+                </article>
+                <article class="info-card info--reversed">
+                    <img src="./assets/imgs/img_confianca.png" alt="">
+                    <div>
+                        <h3 class="heading__border">ONGs são confiáveis? Como saber?</h3>
+                        <p>Determinar a confiabilidade de uma ONG requer uma abordagem criteriosa e informada. Pesquisa e análise minuciosa da atuação da organização são passos cruciais, e verificar a transparência financeira é igualmente fundamental, proporcionando insights sobre como os recursos são geridos e alocados. Além disso, consultar opiniões de terceiros, como beneficiários diretos, parceiros e especialistas no campo, pode fornecer uma perspectiva externa valiosa sobre a reputação e a integridade da organização.<br><br>
+                        Ao combinar esses elementos, é possível obter uma compreensão mais completa da confiabilidade de uma ONG e tomar decisões informadas sobre o apoio a suas iniciativas.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="divulgue__layout">
+                <p>Se você tem um projeto social que precisa de mais visibilidade, apoio e impacto, entre em contato conosco e solicite um orçamento sem compromisso.<br>A DivulgaSocial está pronta para te ajudar a fazer a diferença!
+                </p>
+                <a class="divulgue__btn btn btn--laranja">TEM UMA ONG? PARTICIPE!</a>
+            </section>
+        </main>
+        <footer>
+            <div class="footer__about">
+                <h5>DivulgaSocial:<br>Impulsionando Causas</h5>
+                <p>A DivulgaSocial é mais do que uma empresa de comunicação. É uma empresa que acredita no poder das causas sociais e que quer fazer a diferença no mundo.</p>
+                <p>Projeto desenvolvidos por alunos do curso de SI.</p>
+            </div> 
+            <div class="footer__sitemap">
+                <h5>Sitemap</h5>
+                <ul>
+                    <li><a class="footer-sitemap__item" href="index.html#hero">Home</a></li>
+                    <li><a class="footer-sitemap__item" href="index.html#sobre">Sobre nós</a></li>
+                    <li><a class="footer-sitemap__item" href="info.html">Como funciona</a></li>
+                    <li class="footer-sitemap__item">Ongs Parceiras</li>
+                    <li>
+                        <ul class="sitemap__sub-item">
+                            <li><a class="footer-sitemap__item" href="crianca.html">Crianças</a></li>
+                            <li><a class="footer-sitemap__item" href="constru.html">Apoio às mulheres</a></li>
+                            <li><a class="footer-sitemap__item" href="constru.html">Idosos</a></li>
+                            <li><a class="footer-sitemap__item" href="constru.html">Voluntariado</a></li>
+                            <li><a class="footer-sitemap__item" href="constru.html">Educação</a></li>
+                            <li><a class="footer-sitemap__item" href="constru.html">Moradia</a></li>
+                            <li><a class="footer-sitemap__item" href="constru.html">Lgbt</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="footer-sitemap__item" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-link__layout">
+                <h5>Redes sociais</h5>
+                <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_instagram--branco.png" alt="Logo do Instagram.">@DivulgaSocial_Baixada</a>
+                <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_facebook--branco.png" alt="Logo do Facebook.">@DivulgaSocial_</a>
+                <a class="footer-link__item" href="contato.html"><img src="./assets/icons/icon_linkedin--branco.png" alt="Logo do LinkedIn.">DivulgaSocial</a>
+            </div>
+        </footer>
+        <script src="./assets/scripts/navmenu.js"></script>
+    </body>
 </html>

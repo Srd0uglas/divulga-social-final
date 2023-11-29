@@ -1,7 +1,7 @@
-.contact__form, .contact__devs { width: 1300px;}
+.contact__form, .contact__devs { width: 60vw; }
 .contact__form h2,.contact__devs h2 {
-    font-family: var(--fonte_inter);
     font-size: var(--fonte_subtitulo-pequeno);
+    font-family: var(--fonte_inter);
     padding: 0 15px;
     margin: 0 0 70px 0;
 }
@@ -13,8 +13,8 @@
 }
 .form__img {
     border-radius: 15px 0 0 15px;
-    width: 500px;
-    background-color: #777;
+    max-width: 500px;
+    box-shadow: 1px 2px 4px #00000080;
 }
 form {
     padding: 30px 50px;
@@ -24,6 +24,7 @@ form {
     align-items: center;
     gap: 40px;
     background-color: var(--cor_azul);
+    box-shadow: 1px 2px 4px #00000080;
 }
 .input__container {
     display: flex;
@@ -37,15 +38,16 @@ form {
     color: var(--cor_branco);
 }
 .form__subtitle--radio { margin: 0 10px; }
-
-#nomeContato, #emailContato, #telContato, #motivoContato {
+#nomeContato, 
+#emailContato, 
+#telContato, 
+#motivoContato {
     width: 450px;
     font-family: var(--fonte_inter);
     border-radius: 12px;
     padding: 10px 15px;
-    resize:none;
+    resize: none;
 }
-
 .form__submit {
     padding: 15px 100px;
     border-radius: 12px;
@@ -54,52 +56,38 @@ form {
     color: var(--cor_branco);
     background-color: var(--cor_laranja);
 }
-
 /*cards dos desenvolvedores*/
 .devs__layout {
-    height: 400px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     gap: 70px;
 }
-.card__container {
-    width: 100px;
-    height: min-content;
-    position: relative;
-    transition: all ease 1s;
+.card__container { 
+    padding: 20px 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    text-align: end;
+    border: 1px solid #cfcfcf;
+    box-shadow: 1px 2px 4px #00000080;
 }
-.card__container:hover { width: min-content; 
-    transition: all ease 1s;} 
-.card__container:hover .card__content { display: block; 
-    transition: all ease 1s;}
 .card__img {
-    margin: 15px;
-    position: absolute;
-    width: 100px;
+    width: 80px;
     border-radius: 100%;
 }
-.card__content {
-    display: none;
-    width: 400px; 
-    padding: 15px;
-    border-radius: 12px;
-    background-color:#dbdbdb;
-    text-align: end;
+.card__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.card__content h3 {
+.card__top h3 {
     font-family: var(--fonte_inter);
     font-size: var(--fonte_subtitulo-pequeno);
+    color: var(--cor_laranja)
 }
-.card__content span {
-    display: block;
-    margin: 10px 0 60px;
-    font-family: var(--fonte_inter);
-    font-size: var(--fonte_corpo);
-    font-weight: 600;
-    color: var(--cor_cinza);
-}
-.card__content p {
+
+.card__container p {
+    margin: 20px 0;
     font-family: var(--fonte_inter);
     font-size: var(--fonte_corpo);
 }
@@ -107,11 +95,16 @@ form {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
     margin-top: 10px;
 }
-
+.card__socialmedia a img {
+    filter: invert(56%) sepia(92%) saturate(889%) hue-rotate(172deg) brightness(104%) contrast(104%);
+    width: 1.9rem;
+}
 .project__link {
+    margin: 70px auto 0;
     font-family: var(--fonte_inter);
     font-size: var(--fonte_corpo);
     font-weight: 600;
@@ -121,4 +114,31 @@ form {
 .project__link a { 
     color: var(--cor_laranja);
     text-decoration: underline;
+}
+.card__socialmedia a img:hover,
+.card__img:hover { transform: scale(1.250);}
+
+@media screen and (max-width: 1180px) { /* tablet screen */ 
+    .contact__form, .contact__devs {width: auto; }
+    .contact__form h2,.contact__devs h2 { margin-bottom: 35 px; }
+    form { padding: 40px 0; }
+    .form__container { flex-direction: column; }
+    .form__img { 
+        max-width: 100%;
+        border-radius: 15px 15px 0 0; 
+    }
+    form { border-radius: 0  0 15px 15px; }
+    .devs__layout {
+        align-items: center;
+        gap: 30px;
+    }
+    .card__container { width: 70vw;}   
+}
+@media screen and (max-width: 600px) { /* phone screen */
+    #nomeContato, 
+    #emailContato, 
+    #telContato, 
+    #motivoContato {
+        width: 250px;
+    }
 }
